@@ -1,5 +1,4 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
-%}
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
 <h1 align="center">Notes</h1>
 <ul class="list-group list-group-flush" id="notes">
   {% for note in user.notes %}
@@ -18,4 +17,13 @@
     <button type="submit" class="btn btn-primary">Add Note</button>
   </div>
 </form>
+
+<div align="center">
+    <a href="/static/index.html">Static page</a>
+    <br>
+    <a href="/static/ABC/index.html">Folder 1</a>
+    <br>
+    <a href="/static/DEF/index.html">Folder 2</a>
+</div>
+
 {% endblock %}
